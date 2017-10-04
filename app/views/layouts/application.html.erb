@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HarryPotterWebclient</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all' %>
+    <%= javascript_include_tag 'application' %>
+  </head>
+
+  <body>
+    <a href="/characters">All Characters</a><br>
+    <a href="/characters/new">New Character</a>
+    <%= yield %>
+  </body>
+</html>

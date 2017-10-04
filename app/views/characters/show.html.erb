@@ -1,0 +1,8 @@
+<h1>Harry Potter Character Info</h1>
+
+<h2>Name: <%= @character['first_name'] %> <%= @character['last_name'] %></h2>
+<h2>House: <%= @character['house'] %></h2>
+
+<%= link_to "Edit Animal", "/characters/#{ @character['id'] }/edit" %>
+<%= link_to "Delete Animal", "/characters/#{ @character['id'] }", method: :delete %>
+

@@ -1,0 +1,6 @@
+<h1>All Harry Potter Characters</h1>
+
+<% @characters.each do |character| %>
+  <h2>Name: <a href="/characters/<%= character['id'] %>"><%= character['first_name'] %> <%= character['last_name'] %></a></h2>
+  <h2>House: <%= character['house'] %></h2>
+<% end %>
